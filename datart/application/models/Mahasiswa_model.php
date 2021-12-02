@@ -64,7 +64,7 @@ class Mahasiswa_model extends CI_Model
             $foto = $data['file_name'];
 			
         } else {
-            $foto = $this->input->post('foto');
+            $foto = $this->input->post('fotolama');
         }
         
         $id = $this->input->post('id');

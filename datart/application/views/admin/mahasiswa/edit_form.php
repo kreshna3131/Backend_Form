@@ -106,7 +106,9 @@
 
 							<div class="form-group">
 								<label for="foto">Foto</label>
+								<div><img src="<?php echo base_url('./assets/images/') . $kunci->foto?>" border="0" width="70px" height="70px"/></div>
 								<input class="form-control <?php echo form_error('foto') ? 'is-invalid' : '' ?>" type="file" name="foto" placeholder="foto" />
+								<input type="hidden" name="fotolama" value="<?php echo $kunci->foto; ?>" />
 								<div class="invalid-feedback">
 									<?php echo form_error('foto') ?>
 								</div>
